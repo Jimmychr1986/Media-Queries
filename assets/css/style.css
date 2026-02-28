@@ -158,6 +158,10 @@ menu{
 
     main{
         grid-area: main;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
          background-color: beige;
     }
 
