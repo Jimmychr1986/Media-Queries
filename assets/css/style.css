@@ -16,20 +16,19 @@ aside{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 2px solid rgb(255, 0, 140);
+    background-color: #009688;
 }
 
 .aside2{
     display: flex;
     flex-direction: row;
-    border: 2px solid rgb(114, 13, 38);
+    color: white;
 }
 
 .icon{
     align-items: center;
     justify-content: center;
     padding: 6px;
-    border: 2px solid orange;
 }
 
 .search-container{
@@ -38,7 +37,7 @@ aside{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px solid rgb(70, 25, 235);
+    background-color: #607D8B;
 }
 
 select{
@@ -47,6 +46,8 @@ select{
     border-radius: 6px;
     padding: 4px;
     margin: 0.2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 
 label{
@@ -56,7 +57,9 @@ label{
 }
 
 option{
-    background-color: rgb(202, 119, 10);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 0.8rem;
+    background-color: #C8E6C9
 }
 
 main{
@@ -65,7 +68,7 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 2px solid orange;
+    background-color: beige;
 }
 
 footer{
@@ -74,7 +77,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px solid rgb(37, 105, 10);
+    background-color: #FFA000;
 }
 
 .icons{
@@ -86,15 +89,38 @@ menu{
 }
 
 .cardmobi{
-    border: 0.5px solid blueviolet;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid rgb(153, 153, 153);
     border-radius: 0.25rem;
-    height: 20rem;
+    height: 23rem;
     margin: 10px 0;
 }
 
-.cardDesk{
+.bars, .cardDesk, .cardTablet{
     display: none;
 }
+
+    .electrico1{
+        display: flex;
+        justify-content: center;
+        border-radius: 0.25rem;
+        width: 40rem;
+        margin: 10px;
+        height: 15rem;
+    }
+
+    button{
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(238, 196, 7);
+    cursor: pointer;
+    margin: 0.5rem;
+    height: 30px;
+    width: 130px;
+    font-size:10px;
+    text-align: center;
+    }
 
 .pagination{
     display: flex;
@@ -117,7 +143,7 @@ menu{
     color: white;
 }
 
-/* MEDIA QUERIES*/
+/* Media Queries Versión Desktop*/
 
 @media(width >= 576px)
 {
@@ -130,7 +156,13 @@ menu{
         grid-template-rows: 8% auto 10%;
     }
 
+    main{
+        grid-area: main;
+         background-color: beige;
+    }
+
     aside{
+        grid-area: aside;
         justify-content: flex start;
         flex-direction: column;
         padding: 1.5rem;
@@ -153,14 +185,14 @@ menu{
         flex-direction: column;
         height: 95vh;
         padding: 2px;
-        border: 2px solid rgb(37, 105, 10);
     }
 
     menu p{
         display: flex;
         justify-content: center;
-        font-size: 0.5rem;
+        font-size: 1rem;
         margin: 0.7rem;
+        color: white;
     }
 
         .search-container{
@@ -168,7 +200,7 @@ menu{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
+        }
 
     select{
         width: 60rem;
@@ -188,24 +220,46 @@ menu{
         justify-content: center;
         align-items: center;
         gap: 11px;
-        border: 1px solid green;
     }
 
     .cardstop,  .cardsbottom{
         display: flex;
         align-items: center;
-        gap: 11px;
+        padding: 1rem auto;
+        gap: 5px;
     }
 
-    .cardDesk , .cardmobi{
+    .cardDesk, .cardTablet, .cardmobi{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0.25rem;
+        width: 15rem;
+        margin: 10px;
+        height: 20rem;
+        border: 1px solid rgb(153, 153, 153);
+    }
+
+    .electrico1, .electrico2, .electrico3, .electrico4, .electrico5, .electrico6, .electrico7, .electrico8{
         display: flex;
         justify-content: center;
         border-radius: 0.25rem;
-        width: 10rem;
+        width: 13.5rem;
         margin: 10px;
         height: 20rem;
-        border: 1px solid rgb(212, 165, 8);
     }
+        button{
+        border: none;
+        border-radius: 10px;
+        background-color: rgb(238, 196, 7);
+        cursor: pointer;
+        margin: 0.5rem;
+        height: 30px;
+        width: 130px;
+        font-size:10px;
+        text-align: center;
+        }
 
     .pagination{
         display: flex;
