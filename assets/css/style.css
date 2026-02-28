@@ -113,7 +113,7 @@ menu{
     button{
     border: none;
     border-radius: 10px;
-    background-color: rgb(238, 196, 7);
+    background-color: #FFA000;
     cursor: pointer;
     margin: 0.5rem;
     height: 30px;
@@ -133,13 +133,13 @@ menu{
 .pagination a{
     padding: 0.5rem;
     text-decoration: none;
-    color: rgb(218, 141, 27);
-    border: 1px solid;
+    color: #FFA000;;
+    border: 1px solid ;
     border-radius: 10px;
 }
 
 .pagination a.active{
-    background-color: rgb(5, 71, 116);
+    background-color: #386b85;
     color: white;
 }
 
@@ -252,7 +252,7 @@ menu{
         button{
         border: none;
         border-radius: 10px;
-        background-color: rgb(238, 196, 7);
+        background-color: #FFA000;
         cursor: pointer;
         margin: 0.5rem;
         height: 30px;
@@ -266,6 +266,11 @@ menu{
         justify-content: center;
         align-items: center;
         padding-bottom: 1rem;
+    }
+
+    .pagination a.active{
+    background-color: #386b85;
+    color: white;
     }
 
     footer{
